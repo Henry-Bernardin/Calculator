@@ -1,2 +1,19 @@
-// Frontend Mentor template starter
-console.log("Frontend Mentor template ready");
+"use strict";
+
+const add = function(x, y) {
+    return x + y; 
+}
+
+const subtract = function(x, y) {
+    return x - y; 
+}
+
+const multiply = function(x, y) {
+    return x * y; 
+}
+
+const divide = function(x, y){
+    return x / y; 
+}
+
+
