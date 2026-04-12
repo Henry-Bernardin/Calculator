@@ -97,11 +97,11 @@ header,
 hgroup,
 menu,
 nav,
-section {
-  display: block;
-}
+section, 
 body {
   line-height: 1;
+  display: flex;
+  justify-content: center;
 }
 ol,
 ul {
@@ -118,10 +118,39 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 html {
   box-sizing: border-box;
+}
+
+.container {
+background-color: aqua; 
+width: 300px; 
+height: 300px; 
+display: flex;
+flex-direction: column;
+/* border: medium dashed rgb(255, 0, 0); */
+}
+
+.container .functions {
+  display: flex;
+  flex: 1;
+}
+
+.container .display{
+  /* border: medium dashed orange; */
+  width: 300px; 
+  height: 40px; 
+  background-color: blueviolet;
+  flex: 1;
+}
+
+.container .functions button{
+  /* border: medium dashed orange; */
+  flex: 1; 
 }
