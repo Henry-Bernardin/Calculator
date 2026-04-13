@@ -102,6 +102,7 @@ body {
   line-height: 1;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 ol,
 ul {
@@ -127,13 +128,19 @@ table {
 html {
   box-sizing: border-box;
 }
-
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;
+}
 .container {
 background-color: aqua; 
 width: 300px; 
 height: 300px; 
 display: flex;
 flex-direction: column;
+
 /* border: medium dashed rgb(255, 0, 0); */
 }
 
@@ -146,7 +153,7 @@ flex-direction: column;
   /* border: medium dashed orange; */
   width: 300px; 
   height: 40px; 
-  background-color: blueviolet;
+  background-color: rgb(135, 116, 152);
   flex: 1;
 }
 

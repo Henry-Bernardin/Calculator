@@ -39,6 +39,3 @@ if (operator === operator.division) {
     return divide(number1, number2); 
 }
 }
-
-xc
-const click = addEventListener(onclick, )
