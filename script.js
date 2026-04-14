@@ -39,3 +39,11 @@ if (operator === operator.division) {
     return divide(number1, number2); 
 }
 }
+
+const digitButtons = document.getElementsByClassName("digits"); 
+let showDisplay = document.getElementById("display") 
+for (const btn of digitButtons) {
+    btn.addEventListener('click', function(){
+    showDisplay.innerHTML = this.value;
+} 
+)};  
