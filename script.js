@@ -16,34 +16,37 @@ const divide = function(x, y){
     return x / y; 
 }
 
-let number1 = 0; 
-let number2 = 0; 
-const operator = {
-    addition:  "+",
-    subtraction: "-", 
-    multiplication: "*", 
-    division: "/", 
+
+
+let firstNumber =""; 
+let secondNumber =""; 
+
+const operate = function(firstNumber, operator, secondNumber){
+    if(operator === "+"){
+        return add(firstNumber,secondNumber);
+    }
+    if(operator === "-"){
+        return subtract(firstNumber, secondNumber); 
+    }
+    if (operator === "x") {
+        return multiply(firstNumber, secondNumber); 
+    }
+    if (operator === "/") {
+        return divide(firstNumber, secondNumber); 
+    }
 }
 
-const operate = function(number1, operator, number2){
-if(operator === operator.addition){
-return add(number1,number2);
-}
-if(operator === operator.subtraction){
-    return subtract(number1, number2); 
-}
-if (operator === operator.multiplication) {
-    return multiply(number1, number2); 
-}
-if (operator === operator.division) {
-    return divide(number1, number2); 
-}
-}
+const btn = document.querySelectorAll("button"); 
+let showDisplay = document.getElementById("display");
 
-const digitButtons = document.getElementsByClassName("digits"); 
-let showDisplay = document.getElementById("display") 
-for (const btn of digitButtons) {
-    btn.addEventListener('click', function(){
+for (const btns of btn) {
+    btns.addEventListener('click', function(e){
     showDisplay.innerHTML = this.value;
+    firstNumber += e.target.value; 
+    console.log(firstNumber); 
+    if(e.target.value === "-" || "+" || "x" || "/"){
+    }
+    // secondNumber += e.target.value; 
+    // console.log(secondNumber); 
 } 
 )};  
